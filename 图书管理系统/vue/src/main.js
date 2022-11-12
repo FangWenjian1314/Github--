@@ -5,10 +5,15 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import '@/assets/global.css'
 import SlideVerify from 'vue-monoplasty-slide-verify';
+import VueRouter from 'vue-router';
+import ViewUI from 'view-design';
+import 'view-design/dist/styles/iview.css';
 
 Vue.config.productionTip = false
-Vue.use(ElementUI, {size:'small'}); //medium small mini
+Vue.use(ElementUI, {size: 'small'}); //medium small mini
 Vue.use(SlideVerify);
+Vue.use(ViewUI);
+Vue.use(VueRouter);
 
 new Vue({
   router,
